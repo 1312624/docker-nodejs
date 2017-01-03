@@ -5,7 +5,7 @@ const app = express();
 const server = http.createServer(app);
 
 
-app.get('/',() => {
+app.get('/',(req, res) => {
     res.send('Hello world from Distelli & Docker!');
 });
 
